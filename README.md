@@ -9,4 +9,7 @@ splash+lua+scrapy抓取异步数据(今日头条热点新闻前n笔)
 ##### 3，spider爬虫的解析代码
 ###### 此部份很简单，不多做说明，红框处则是SplashRequest请求内的参数，必传参数有url和args以endpoing，args传入一个字典，lua_source字段指定lua脚本的来源，这里是lua_code变量，wait字段为等待时间，images字段决定了是否在加载时加载图片，0为不加载，参数endcoding指定了splash服务器的接口，因为要在python代码里运行lua脚本，所以必须指定execute做为接口，相当于在localhost:8050/execute这个url传参
 ![img3](https://github.com/ziliang-wang/toutiao/blob/master/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200426093621.png)
+##### 4，抓取结果截图
+###### 扣掉字段名称，共抓取了前107笔，相当于splash帮你在页面底部加载了9次左右
+
 
